@@ -1,64 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https: //fonts.googleapis.com/css2?family= Montserrat :wght@700 & display=swap"
+      rel="stylesheet"
+    />
+
     <title>Pre-course</title>
   </head>
 
   <body>
     <section>
-      <div>
-        <div>
-          <img src="./assets/img/main-image.jpg" alt=""/>
-          <div>
-            <img src="./assets/img/image-1.png" alt=""/>
+      <div class="card">
+        <div class="product-image-block">
+          <img src="./assets/img/main-image.jpg" alt="" />
+          <div class="preview selected">
+            <img src="./assets/img/image-1.png" alt="" />
           </div>
-          <div>
-            <img src="./assets/img/image-2.png" alt=""/>
+          <div class="preview">
+            <img src="./assets/img/image-2.png" alt="" />
           </div>
         </div>
-        <div>
-          <h1>Fluted Contrast</h1>
-          <span>Mug / 33 cl</span>
-          <p>
+        <div class="product-image-block">
+          <h1 class="main-title">Fluted Contrast</h1>
+          <span class="subtitle">Mug / 33 cl</span>
+          <p class="text">
             Fluted Contrast represents the perfect fusion between the aesthetic
             and the functional. The design is elegant and modern, created out of
           </p>
-          <div>
-            <h2>Color options</h2>
-
-            <div>
-              <div></div>
-            </div>
-            <div>
-              <div></div>
-            </div>
-            <div>
-              <div></div>
-            </div>
-            <div>
-              <div></div>
-            </div>
-            <div>
-              <div></div>
-            </div>
+          <div class="colors">
+            <h2 class="title">Color options</h2>
+            <ul>
+              <li class="selected">
+                <div class="circle blue"></div>
+              </li>
+              <li>
+                <div class="circle green"></div>
+              </li>
+              <li>
+                <div class="circle red"></div>
+              </li>
+              <li>
+                <div class="circle black"></div>
+              </li>
+              <li>
+                <div class="circle yellow"></div>
+              </li>
+            </ul>
           </div>
 
           <div>
-            <h2>Quantity</h2>
-            <select name="Quantity" id="Quantity">
+            <h2 class="title">Quantity</h2>
+            <select class="Quantity" name="Quantity" id="Quantity">
               <option value="">1</option>
               <option value="">2</option>
               <option value="">3</option>
             </select>
           </div>
           <div>
-            <h2>Price</h2>
-            <span>eur 39,00</span>
+            <h2 class="title">Price</h2>
+            <span class="Price">eur 39,00</span>
           </div>
 
-          <button>Add To Basket</button>
+          <button class="btn">Add To Basket</button>
         </div>
       </div>
     </section>
