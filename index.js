@@ -85,3 +85,32 @@
 // 
 // const updatedPrep = copyPrep(prep);
 // console.log(updatedPrep);
+
+
+//Пример исходный код
+// function calculateTotalPrice(price, quantity) {
+  // let discount = 0;
+  // if (quantity > 10) {
+    // discount = 0.1;
+  // }
+// 
+  // const totalPrice = price * quantity;
+  // const discountedPrice = totalPrice - totalPrice * discount;
+// 
+  // return discountedPrice;
+// }
+// 
+// console.log(calculateTotalPrice(20, 15));
+// 
+//Рефакторинг кода
+// function calculateTotalPrice(price, quantity) {
+  // const discount = quantity > 10 ? 0.1 : 0;
+// 
+  // const totalPrice = price * quantity;
+  // const discountedPrice = totalPrice * (1 - discount);
+// 
+  // return discountedPrice;
+// }
+// 
+// console.log(calculateTotalPrice(20, 15));
+// 
