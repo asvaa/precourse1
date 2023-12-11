@@ -18,15 +18,20 @@
     <section>
       <div class="card">
         <div class="product-image-block">
-          <img src="./assets/img/main-image.jpg" alt="" />
-          <div class="preview selected">
-            <img src="./assets/img/image-1.png" alt="" />
+          <div class="main-image-wrapper">
+            <img class="main-image" src="./assets/img/main-image.jpg" alt="" />
           </div>
-          <div class="preview">
-            <img src="./assets/img/image-2.png" alt="" />
+
+          <div class="previews-wrapper">
+            <div class="preview selected">
+              <img src="./assets/img/image-1.png" alt="" />
+            </div>
+            <div class="preview">
+              <img src="./assets/img/image-2.png" alt="" />
+            </div>
           </div>
         </div>
-        <div class="product-image-block">
+        <div class="product-info-block">
           <h1 class="main-title">Fluted Contrast</h1>
           <span class="subtitle">Mug / 33 cl</span>
           <p class="text">
@@ -35,7 +40,7 @@
           </p>
           <div class="colors">
             <h2 class="title">Color options</h2>
-            <ul>
+            <ul class="color-items">
               <li class="selected">
                 <div class="circle blue"></div>
               </li>
@@ -53,21 +58,23 @@
               </li>
             </ul>
           </div>
-
-          <div>
-            <h2 class="title">Quantity</h2>
-            <select class="Quantity" name="Quantity" id="Quantity">
-              <option value="">1</option>
-              <option value="">2</option>
-              <option value="">3</option>
-            </select>
+          <div class="wrapper">
+            <div>
+              <h2 class="title">Quantity</h2>
+              <select class="Quantity" name="Quantity" id="Quantity">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+              </select>
+            </div>
+            <div>
+              <h2 class="title">Price</h2>
+              <span class="Price">eur 39,00</span>
+            </div>
           </div>
           <div>
-            <h2 class="title">Price</h2>
-            <span class="Price">eur 39,00</span>
+            <button class="btn">Add To Basket</button>
           </div>
-
-          <button class="btn">Add To Basket</button>
         </div>
       </div>
     </section>
