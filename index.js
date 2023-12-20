@@ -253,3 +253,92 @@
 // numbers.map((row) => {
 //   row.map((number) => console.log(number));
 // });
+
+//Что такое цикл и какие 4 этапа у нас есть?
+//Что такое тело цикла?
+//Использование цикла для обхода массива
+
+//Запустите это код и проанализируйте его
+// for (let i = 1; i <= 10; i++) {
+//   console.log(i);
+// }
+
+//Запустите это код и проанализируйте его
+// let numbers = [1, 2, 3, 4, 5]; // Пример массива чисел
+// for (let i = 0; i < numbers.length; i++) {
+//   const number = numbers[i];
+//   console.log(number);
+// }
+
+//Запустите этот код и проанализируйте его
+// let objects = [{ name: "Alice" }, { name: "Bob" }, { name: "Charlie" }]; // Пример массива объектов
+// for (let i = 0; i < objects.length; i++) {
+//   const object = objects[i];
+//   console.log(object.name);
+// }
+// Было:
+//function renderCounter(existingParam) {
+    // Ваш код, использующий existingParam
+    // }...
+
+    // Убираем параметр, так как он больше не нужен
+    // Мы можем просто удалить упоминание о параметре внутри функции
+    // и использовать переменную, объявленную где-то выше в функции или во внешней области видимости
+    // ...
+
+    // Пример:
+    //const newValue = 100; // Новое значение для использования вместо параметра
+    // Ваш код, использующий newValue
+    // ...
+
+    //function renderValue(param1, paramToRemove, param3) {
+        // код функции
+    //}
+    
+
+    //function renderValue(param1, param3) {
+        // код функции без параметра paramToRemove
+    //}
+    
+    // renderValue.js
+
+// Глобальный объект для хранения данных
+//const globalData = {
+    //someValue: null, // По умолчанию значение null
+    // Другие данные
+  //};
+  
+  // Функция для установки значения данных
+  //function setValue(newValue) {
+   // globalData.someValue = newValue;
+  //}
+  
+  // Функция для получения значения данных
+  //function getValue() {
+    //return globalData.someValue;
+  //}
+  
+  // Функция renderValue, использующая данные из глобального объекта
+  //function renderValue() {
+    //const value = getValue();
+    // Здесь происходит использование значения value в вашем коде для отображения
+   // console.log('Значение:', value);
+  //}
+  
+  // Экспорт функции renderValue для использования в других модулях, если нужно
+  //module.exports = {
+  //  renderValue,
+   // setValue,
+  //};
+
+  // Другой файл или скрипт
+
+// Импорт функции renderValue и других функций из renderValue.js
+//const { renderValue, setValue } = require('./renderValue');
+
+// Установка значения
+//setValue(42);
+
+// Вызов функции renderValue для отображения значения
+//renderValue();
+
